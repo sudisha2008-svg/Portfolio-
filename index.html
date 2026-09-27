@@ -1,406 +1,271 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sudisha — Student & Developer Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudisha — Student & Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-```
-<!-- Navigation -->
-<header>
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
 
-    <h1>&lt;Sudisha /&gt;</h1>
+      <div class="logo">&lt;Sudisha /&gt;</div>
 
-    <nav>
-        <a href="#about">About</a> |
-        <a href="#projects">Projects</a> |
-        <a href="#skills">Skills</a>
-    </nav>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+      </nav>
 
-</header>
+    </div>
+  </header>
 
-<hr>
 
-<main>
+  <main>
 
-    <!-- About Section -->
-    <section id="about">
+    <!-- Hero / Personal Profile Section -->
+    <section id="about" class="hero-section">
+      <div class="container">
 
-        <p>Student</p>
+        <span class="hero-badge">Student</span>
 
-        <h2>Hi, I'm Sudisha</h2>
+        <h1 class="hero-title">
+          Hi, I'm <span>Sudisha</span>
+        </h1>
 
-        <p>Student at Scaler School of Technology</p>
-
-        <h3>Profile</h3>
-
-        <table border="1">
-
-            <tr>
-                <th>Education</th>
-                <td>1st Year BSc Computer Science</td>
-            </tr>
-
-            <tr>
-                <th>Institution</th>
-                <td>Scaler School of Technology</td>
-            </tr>
-
-            <tr>
-                <th>Primary Skills</th>
-                <td>C++, HTML</td>
-            </tr>
-
-            <tr>
-                <th>Email</th>
-                <td>sudisha2008@gmail.com</td>
-            </tr>
-
-        </table>
-
-        <h3>Social Links</h3>
-
-        <p>
-            <a href="https://github.com/sudisha2008-svg"
-               target="_blank">
-                GitHub
-            </a>
+        <p class="hero-subtitle">
+          Student at Scaler School of Technology
         </p>
 
-        <p>
-            <a href="https://www.linkedin.com/in/pulluri-sudisha-458482407"
-               target="_blank">
-                LinkedIn
-            </a>
-        </p>
 
-        <p>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sudisha2008@gmail.com"
-               target="_blank">
-                Email Me
-            </a>
-        </p>
+        <!-- Profile Terminal Card -->
+        <div class="profile-card">
 
+          <div class="profile-card-header">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+
+          <div class="profile-grid">
+
+            <div class="profile-item">
+              <span>Education</span>
+              <strong>1st Year BSc Computer Science</strong>
+            </div>
+
+            <div class="profile-item">
+              <span>Institution</span>
+              <strong>Scaler School of Technology</strong>
+            </div>
+
+            <div class="profile-item">
+              <span>Primary Skills</span>
+              <strong>C++, HTML</strong>
+            </div>
+
+            <div class="profile-item">
+              <span>Email</span>
+              <strong>sudisha2008@gmail.com</strong>
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- Social Links -->
+        <div class="social-links">
+
+          <a
+            href="https://github.com/sudisha2008-svg"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-btn">
+            GitHub
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/pulluri-sudisha-458482407"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-btn">
+            LinkedIn
+          </a>
+
+          <!-- Email Link -->
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=sudisha2008@gmail.com"
+             target="_blank"
+            rel="noopener noreferrer"
+            class="social-btn">
+            Email Me
+          </a>
+
+        </div>
+
+      </div>
     </section>
 
-    <hr>
 
     <!-- Projects Section -->
-    <section id="projects">
+    <section id="projects" class="projects-section">
+      <div class="container">
 
-        <h2>Featured Projects</h2>
+        <h2 class="section-title">Featured Projects</h2>
 
-        <p>
-            Web Development Lab Assignments & Interactive Applications
+        <p class="section-subtitle">
+          Web Development Lab Assignments & Interactive Applications
         </p>
 
-        <!-- Project 1 -->
-        <article>
 
-            <h3>Student Portal</h3>
+        <div class="projects-grid">
 
-            <p>
+          <!-- Project 1: Student Portal -->
+          <article class="project-card">
+
+            <div>
+
+              <span class="project-tag">
                 Lab 01 // HTML + Introductory CSS
-            </p>
+              </span>
 
-            <p>
-                A structured, semantic web portal built to display
-                profile information, technical skills, weekly academic
-                schedules, and an interactive course registration form.
-            </p>
+              <h3 class="project-title">
+                Student Portal
+              </h3>
 
-            <h4>Core Concepts Tested:</h4>
+              <p class="project-description">
+                A structured, semantic web portal built to display profile
+                information, technical skills, weekly academic schedules,
+                and an interactive course registration form.
+              </p>
 
-            <ul>
 
-                <li>
+              <div class="project-details">
+
+                <h4>Core Concepts Tested:</h4>
+
+                <ul class="project-list">
+
+                  <li>
                     Semantic HTML structure
-                    (header, nav, main, footer)
-                </li>
+                    (<code>header</code>, <code>nav</code>,
+                    <code>main</code>, <code>footer</code>)
+                  </li>
 
-                <li>
+                  <li>
                     Data tables for profile and weekly schedules
-                </li>
+                  </li>
 
-                <li>
+                  <li>
                     Registration form with selects, radio buttons,
                     and checkboxes
-                </li>
+                  </li>
 
-                <li>
-                    Element, Class, and ID selectors
-                </li>
+                  <li>
+                    Element, Class (<code>.highlight</code>),
+                    and ID (<code>#student-name</code>) selectors
+                  </li>
 
-            </ul>
+                </ul>
 
-            <h4>Technology Used:</h4>
+              </div>
 
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Forms</li>
-                <li>Tables</li>
-            </ul>
+            </div>
 
-            <p>
-                <a href="https://github.com/sudisha2008-svg/student-portal"
-                   target="_blank">
-                    View Project
+
+            <div>
+
+              <div class="project-tech-stack">
+
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">Forms</span>
+                <span class="tech-tag">Tables</span>
+
+              </div>
+
+
+              <div class="project-actions">
+
+                <a
+                  href="https://github.com/sudisha2008-svg/student-portal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary">
+                  View Project
                 </a>
-            </p>
 
-            <p>
-                <a href="https://github.com/sudisha2008-svg/student-portal"
-                   target="_blank">
-                    Source Code
+                <a
+                  href="https://github.com/sudisha2008-svg/student-portal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary">
+                  Source Code
                 </a>
-            </p>
 
-        </article>
+              </div>
 
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
     </section>
 
-    <hr>
 
     <!-- Skills Section -->
-    <section id="skills">
+    <section id="skills" class="skills-section">
+      <div class="container">
 
-        <h2>Technical Skills</h2>
+        <h2 class="section-title">
+          Technical Skills
+        </h2>
 
-        <p>Core languages and techniques</p>
+        <p class="section-subtitle">
+          Core languages and techniques
+        </p>
 
-        <ul>
-            <li>C++</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>CSS Flexbox</li>
-            <li>Responsive Design</li>
-        </ul>
 
+        <div class="skills-grid">
+
+          <div class="skill-card">C++</div>
+
+          <div class="skill-card">HTML5</div>
+
+          <div class="skill-card">CSS3</div>
+
+          <div class="skill-card">CSS Flexbox</div>
+
+          <div class="skill-card">Responsive Design</div>
+
+        </div>
+
+      </div>
     </section>
 
-</main>
+  </main>
 
-<hr>
 
-<!-- Footer -->
-<footer>
+  <!-- Footer -->
+  <footer class="site-footer">
 
-    <p>
+    <div class="container">
+
+      <p>
         &copy; 2026 Sudisha. All rights reserved.
-    </p>
+      </p>
 
-</footer>
-```
+    </div>
+
+  </footer>
 
 </body>
-
-</html>
-<!DOCTYPE html>
-
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sudisha — Student & Developer Portfolio</title>
-</head>
-
-<body>
-
-```
-<!-- Navigation -->
-<header>
-
-    <h1>&lt;Sudisha /&gt;</h1>
-
-    <nav>
-        <a href="#about">About</a> |
-        <a href="#projects">Projects</a> |
-        <a href="#skills">Skills</a>
-    </nav>
-
-</header>
-
-<hr>
-
-<main>
-
-    <!-- About Section -->
-    <section id="about">
-
-        <p>Student</p>
-
-        <h2>Hi, I'm Sudisha</h2>
-
-        <p>Student at Scaler School of Technology</p>
-
-        <h3>Profile</h3>
-
-        <table border="1">
-
-            <tr>
-                <th>Education</th>
-                <td>1st Year BSc Computer Science</td>
-            </tr>
-
-            <tr>
-                <th>Institution</th>
-                <td>Scaler School of Technology</td>
-            </tr>
-
-            <tr>
-                <th>Primary Skills</th>
-                <td>C++, HTML</td>
-            </tr>
-
-            <tr>
-                <th>Email</th>
-                <td>sudisha2008@gmail.com</td>
-            </tr>
-
-        </table>
-
-        <h3>Social Links</h3>
-
-        <p>
-            <a href="https://github.com/sudisha2008-svg"
-               target="_blank">
-                GitHub
-            </a>
-        </p>
-
-        <p>
-            <a href="https://www.linkedin.com/in/pulluri-sudisha-458482407"
-               target="_blank">
-                LinkedIn
-            </a>
-        </p>
-
-        <p>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sudisha2008@gmail.com"
-               target="_blank">
-                Email Me
-            </a>
-        </p>
-
-    </section>
-
-    <hr>
-
-    <!-- Projects Section -->
-    <section id="projects">
-
-        <h2>Featured Projects</h2>
-
-        <p>
-            Web Development Lab Assignments & Interactive Applications
-        </p>
-
-        <!-- Project 1 -->
-        <article>
-
-            <h3>Student Portal</h3>
-
-            <p>
-                Lab 01 // HTML + Introductory CSS
-            </p>
-
-            <p>
-                A structured, semantic web portal built to display
-                profile information, technical skills, weekly academic
-                schedules, and an interactive course registration form.
-            </p>
-
-            <h4>Core Concepts Tested:</h4>
-
-            <ul>
-
-                <li>
-                    Semantic HTML structure
-                    (header, nav, main, footer)
-                </li>
-
-                <li>
-                    Data tables for profile and weekly schedules
-                </li>
-
-                <li>
-                    Registration form with selects, radio buttons,
-                    and checkboxes
-                </li>
-
-                <li>
-                    Element, Class, and ID selectors
-                </li>
-
-            </ul>
-
-            <h4>Technology Used:</h4>
-
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Forms</li>
-                <li>Tables</li>
-            </ul>
-
-            <p>
-                <a href="https://github.com/sudisha2008-svg/student-portal"
-                   target="_blank">
-                    View Project
-                </a>
-            </p>
-
-            <p>
-                <a href="https://github.com/sudisha2008-svg/student-portal"
-                   target="_blank">
-                    Source Code
-                </a>
-            </p>
-
-        </article>
-
-    </section>
-
-    <hr>
-
-    <!-- Skills Section -->
-    <section id="skills">
-
-        <h2>Technical Skills</h2>
-
-        <p>Core languages and techniques</p>
-
-        <ul>
-            <li>C++</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>CSS Flexbox</li>
-            <li>Responsive Design</li>
-        </ul>
-
-    </section>
-
-</main>
-
-<hr>
-
-<!-- Footer -->
-<footer>
-
-    <p>
-        &copy; 2026 Sudisha. All rights reserved.
-    </p>
-
-</footer>
-```
-
-</body>
-
 </html>
